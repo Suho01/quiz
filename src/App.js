@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Main from './pages/Main';
+import Detail from './pages/Detail';
+import { useState } from 'react';
+import QuizList from './components/Quizlist';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const QuizLength = QuizList.length;
+    console.log(QuizLength);
+
+    const [userName, setUserName] = useState("");
+    const [quizList, setQuizList] = useState(QuizList);
+    const ChangeName = (data) => {
+        setUserName(data);
+    }
+
+    return (
+        <Routes>
+            <Route path="/" element={<Main ChangeName={ChangeName} userName={userName} QuizLength={QuizLength} quizList={quizList} />} />
+            <Route path="/quiz" element={<Detail quizList={quizList} userName={userName} />} />
+        </Routes>
+    );
 }
 
 export default App;
