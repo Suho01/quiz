@@ -98,7 +98,7 @@ const QuizList = [
             number1 : "for",
             number2 : "filter",
             number3 : "map",
-            number4 : "forEach"
+                number4 : "forEach"
         },
         hint : "",
         type : "js"
@@ -116,6 +116,110 @@ const QuizList = [
         hint : "",
         type : "js"
     },
+    {
+        id:10,
+        question:"태그 요소 중 div 태그는 어떤 이름의 약어인가요?", 
+        answer: "Division", 
+        view: {
+            number1 : "Division ", 
+            number2 : "Discount", 
+            number3 : "Direct", 
+            number4 : "Div"
+        },
+        hint: "생각해봐",
+        type: "html"
+    },
+    {
+        id:11,
+        question:"태그 요소 중 p 태그는 어떤 이름의 약어인가요?", 
+        answer: "Paragraph", 
+        view: {
+            number1 : "Parapara", 
+            number2 : "Picture", 
+            number3 : "Paragraph", 
+            number4 : "Page"
+        },
+        hint: "생각해봐",
+        type: "html"
+    },
+    {
+        id:12,
+        question:"다음 속성에 대한 설명 중 틀린 것을 고르세요.", 
+        answer: "alt 속성은 요소에 대한 설명으로 마우스를 호버하면 툴팁을 표시", 
+        view: {
+            number1 : "src 속성은 필요한 소스의 경로", 
+            number2 : "href 속성은 하이퍼링크가 가리키는 URL", 
+            number3 : "alt 속성은 요소에 대한 설명으로 마우스를 호버하면 툴팁을 표시", 
+            number4 : "lang 속성은 요소 내에 사용된 언어를 정의"
+        },
+        hint: "생각해봐",
+        type: "css"
+    },
+    {
+        id:13,
+        question:"박스 안의 간격을 지정할 때 사용할 수 있는 속성", 
+        answer: "padding", 
+        view: {
+            number1 : "border-style", 
+            number2 : "border-width", 
+            number3 : "margin", 
+            number4 : "padding"
+        },
+        hint: "생각해봐",
+        type: "css"
+    },
+    {
+        id:14,
+        question:"css 선택자 우선순위(가중치)가 올바른 것", 
+        answer: "!important > ID 선택자 > class 선택자 > 가상 요소 선택자", 
+        view: {
+            number1 : "!important > ID 선택자 > class 선택자 > 가상 요소 선택자", 
+            number2 : "Inline 스타일 > !important > 가상클래스 선택자 > class 선택자", 
+            number3 : "가상 요소 선택자 > class 선택자 > 가상클래스 선택자 > 요소선택자", 
+            number4 : "ID 선택자 > 가상클래스 선택자 > 요소 선택자 > 가상 요소 선택자"
+        },
+        hint: "생각해봐",
+        type: "css"
+    },
+    {
+        id:15,
+        question:"파일이나 디렉터리의 권한을 부여하는 명령으로 알맞은 것", 
+        answer: "chmod", 
+        view: {
+            number1 : "chgrp", 
+            number2 : "chmod", 
+            number3 : "umask", 
+            number4 : "quota"
+        },
+        hint: "생각해봐",
+        type: "js"
+    },
+    {
+        id:16,
+        question:"Array 메서드 중 return 값이 undefined인 것은?", 
+        answer: "forEach", 
+        view: {
+            number1 : "find", 
+            number2 : "filter", 
+            number3 : "map", 
+            number4 : "forEach"
+        },
+        hint: "생각해봐",
+        type: "js"
+    },
+    {
+        id:17,
+        question:"SASS에서 Extend를 사용하기 위한 키워드로 알맞은 것은?", 
+        answer: "%", 
+        view: {
+            number1 : "@", 
+            number2 : "%", 
+            number3 : "$", 
+            number4 : "&"
+        },
+        hint: "생각해봐",
+        type: "js"
+    }
 ]
 
 export default QuizList;
